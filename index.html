@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+
+  <title>Hit the dot | Minijeu Stage Caterina</title>
+  <meta name="description" content="Hit the dot | Minijeu Stage Caterina">
+  <style>
+    #dots {
+      width: 300px;
+      height:300px;
+      margin: 20px 0;
+      font-size:0;
+      border: 2px solid darkgrey;
+    }
+
+    .dot{
+      display:inline-block;
+      width:10%;
+      height:10%;
+      text-align:center;
+      cursor:pointer;
+      border-radius: 100%;
+    }
+
+    .dot.selected{
+      background: black
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div id="game">
+  <button id="reset">Reset</button>
+  <button id="start">Commencer</button>
+  <label for="score">Score : </label><input id="score" disabled/>
+  <label for="timer">Temps : </label><input id="timer" disabled/>
+
+  <div id="dots">
+  </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
