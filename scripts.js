@@ -59,6 +59,8 @@
 
     // Fonction qui démarre le jeu
     let startGame = function () {
+      // On reset le jeu
+      resetGame()
       // On change le statut du jeu
       status = 'playing'
       // On selectionne un point à cliquer et on démarre le timer
